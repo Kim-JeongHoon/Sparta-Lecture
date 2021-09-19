@@ -1,0 +1,94 @@
+body {
+  background-color: ivory;
+  background-image: url("https://new-year.spartacodingclub.kr/images/pattern.png");
+  background-position: 600px 100px;
+  background-repeat: no-repeat;
+}
+
+* {
+  font-family: "Yeon Sung", cursive;
+}
+
+.rtan {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: solid 3px darkred;
+  background-color: darkred;
+  box-shadow: 0px 0px 10px 0px darkred;
+  border-radius: 200px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  text-decoration-line: none;
+  font-size: 32px;
+  background-image: url("https://new-year.spartacodingclub.kr/images/yearS1.png");
+  margin: 80px auto 50px auto;
+}
+
+.title {
+  text-align: center;
+  color: darkred;
+  font-size: 32px;
+}
+
+.msg {
+  text-align: center;
+  color: darkred;
+  font-size: 32px;
+  line-height: 48px;
+  display: none;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-back {
+  width: 150px;
+  height: 50px;
+
+  color: darkred;
+  border: 2px solid darkred;
+  background-color: white;
+
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-share {
+  width: 150px;
+  height: 50px;
+
+  color: white;
+  border: 2px solid darkred;
+  background-color: darkred;
+
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    background-position: 70px -70px;
+    background-size: 500px;
+  }
+  .rtan {
+    margin-top: 50px;
+  }
+  .msg {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 36px;
+    padding: 10px;
+  }
+  .msg > br {
+    display: none;
+  }
+}
